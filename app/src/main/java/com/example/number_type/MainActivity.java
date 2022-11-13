@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     Result_view.setText("FAILURE");
+                    Failure_Increment();
                 }
                 generate_rand_no();
             }
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     Result_view.setText("FAILURE");
+                    Failure_Increment();
                 }
                 generate_rand_no();
             }
@@ -72,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     Result_view.setText("FAILURE");
+                    Failure_Increment();
                 }
                 generate_rand_no();
             }
@@ -84,6 +87,12 @@ public class MainActivity extends AppCompatActivity {
         num = Integer.parseInt((String) right_view.getText());
         num = num + 1;
         right_view.setText(Integer.toString(num));
+    }
+    public void Failure_Increment()
+    {
+        num = Integer.parseInt((String) wrong_view.getText());
+        num = num + 1;
+        wrong_view.setText(Integer.toString(num));
     }
 
     static boolean isPrime(int n)

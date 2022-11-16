@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="GUESS THE NUMBER TYPE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Random_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="50dp"
+        android:text="ODD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/Random_num"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="PRIME"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="EVEN"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/Result_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Random_num"
+        app:layout_constraintTop_toTopOf="@+id/Random_num" />
+
+    <TextView
+        android:id="@+id/EVEN_Score"
+        android:layout_width="75dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="40dp"
+        android:text="RIGHT: "
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/Random_num" />
+
+    <TextView
+        android:id="@+id/Right_view"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:text="0"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/EVEN_Score"
+        app:layout_constraintTop_toTopOf="@+id/EVEN_Score" />
+
+    <TextView
+        android:id="@+id/EVEN_Score2"
+        android:layout_width="75dp"
+        android:layout_height="71dp"
+        android:text="WRONG: "
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EVEN_Score"
+        app:layout_constraintTop_toTopOf="@+id/EVEN_Score" />
+
+    <TextView
+        android:id="@+id/Wrong_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/EVEN_Score2"
+        app:layout_constraintTop_toTopOf="@+id/EVEN_Score2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
